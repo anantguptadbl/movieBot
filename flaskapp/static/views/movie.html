@@ -1,0 +1,15 @@
+<div ng-app="App">
+<div ng-controller="movieController">
+
+<div class="col-md-12">
+<input type="text" ng-model="searchString"> <button ng-click="getSearchResults()">Submit</button>
+</div>
+
+<div ng-repeat"curMovie in searchResults">
+<ul>
+	<li>{{curMovie}}</li>
+</ul>
+</div>
+
+</div> <!-- End of Controller Div -->
+</div> <!-- End of App tag -->
